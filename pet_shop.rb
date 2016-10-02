@@ -26,11 +26,14 @@ def increase_pets_sold(shop_property, increased_number)
   return shop_property[:admin][:pets_sold] += increased_number  
 end 
 
-
-
 def stock_count(shop_property)
   return shop_property[:pets].length
 end   
+
+def all_pets_by_breed(shop_property, pet_type)
+  return shop_property[:pets][:pet_type][:breed] #need to insert way to return pet type and if pet type = british shorthair, print this value  
+end
+
 
 
 
